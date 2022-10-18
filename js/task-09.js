@@ -19,7 +19,7 @@ function changeBodyColor () {
 
   spanRef.textContent = getRandomHexColor();
 
-  bodyRef.style.backgroundColor = getRandomHexColor();
+  bodyRef.style.backgroundColor = spanRef.textContent;
 
   
 };

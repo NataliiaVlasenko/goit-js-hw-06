@@ -17,7 +17,9 @@ const length = inputRef.getAttribute("data-length");
 
 const inputValidation = () => {
     // console.log (inputRef.value.length);
-if( inputRef.value.length == length){
+    // console.log (length);
+
+if( inputRef.value.length === Number(length)){
 
 inputRef.classList.add("valid");
 inputRef.classList.remove("invalid");
@@ -26,7 +28,7 @@ inputRef.classList.remove("invalid");
 else {inputRef.classList.add("invalid");
 }
 
-return;
+
 };
 
 inputRef.addEventListener("blur", inputValidation);
